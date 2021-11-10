@@ -40,7 +40,7 @@ void test3(String[] liste){
 
 void udskriv(boolean succes, String input,String[] liste){
   println(succes + " : Search input " + input + ", return:");
-    for(String e:liste){
-      println(e);
-    }
+  for(String e:liste){
+    println(e);
+  }
 }
