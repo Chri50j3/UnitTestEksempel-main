@@ -6,6 +6,7 @@ void test0(String[] liste){
   else{
     udskriv(false,"v",new String[0]);
   }
+  test1(liste);
 }
 
 void test1(String[] liste){
@@ -15,6 +16,7 @@ void test1(String[] liste){
   else{
     udskriv(false,"va",check);
   }
+  test2(liste);
 }
 
 void test2(String[] liste){
@@ -23,6 +25,16 @@ void test2(String[] liste){
     udskriv(true,"ape",check);
   else{
     udskriv(false,"ape",check);
+  }
+  test3(liste);
+}
+
+void test3(String[] liste){
+  String[] check =search(liste,"*");
+  if(check == liste)
+    udskriv(true,"*",check);
+  else{
+    udskriv(false,"*",check);
   }
 }
 
